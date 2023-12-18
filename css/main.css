@@ -1,0 +1,16 @@
+.validate {
+  border: 1px solid red;
+  background-color: #f4baba;
+  &::placeholder {
+    color: rgb(0, 0, 0);
+  }
+};
+
+.validate::placeholder {
+  color: white;
+}
+
+p {
+  margin: 0;
+  font-size: 12px;
+}

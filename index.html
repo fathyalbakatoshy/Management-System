@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <div class="header-title text-center py-4 text-white-50">
+      <h1 class="text-black-50">Managment System</h1>
+    </div>
+    <div class="mb-3">
+      <input type="text" oninput="validateProductName()" class="form-control " id="productName" placeholder="Product Name">
+    </div>
+
+    <div class="mb-3">
+      <input type="text" oninput="validateProductPrice()" class="form-control " id="productPrice" placeholder="Product Price">
+    </div>
+
+    <div class="mb-3">
+      <input type="text" oninput="validateProductCategory()" class="form-control " id="productCategory" placeholder="product Category">
+    </div>
+
+    <div class="mb-3">
+      <input type="text" oninput="validateProductDesc()" class="form-control " id="productDesc" placeholder="product Desc">
+    </div>
+    
+    <button id="addBtn" onclick="addProduct()" class="btn mb-3 d-block btn-outline-info w-100">Add Product</button>
+    <button id="upDateBtn" onclick="updateProduct()" class="btn mb-3 d-none btn-outline-dark w-100">UpDate Product</button>
+
+    <input class="form-control mb-3" id="searchProductInput"  oninput="searchProduct(this.value)" type="text" placeholder="Search Product">
+
+    <table  class="table table-bordered text-center">
+      <thead>
+        <tr>
+          <th>Index</th>
+          <th>Name</th>
+          <th>Price</th>
+          <th>Category</th>
+          <th>Desc</th>
+          <th>UpDate</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody id="display">
+
+      </tbody>
+    </table>
+  </div>
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
